@@ -36,10 +36,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.lista {
-  gap: 46px;
-}
-
 .list {
   list-style-type: none;
   display: flex;
@@ -487,6 +483,10 @@ body {
   margin-left: 78px;
 }
 
+.newsletter_form {
+  margin-top: 20px;
+}
+
 .newsletter__btn {
   width: 200px;
   height: 50px;
@@ -705,11 +705,6 @@ body {
 }
 
 .join {
-  margin-left: 170px;
-  font-weight: 700px;
-}
-
-.join-us {
   margin-left: 70px;
   margin-top: 72px;
 }
