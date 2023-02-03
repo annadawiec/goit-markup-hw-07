@@ -1,7 +1,12 @@
 @use "./utils/_vars" as *;
-
-body {
-  font-family: "Roboto", sans-serif;
-  background: $main-background;
-  color: $main-color;
-}
+@import "./utils/common";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/wrapper";
+@import "./components/order";
+@import "./components/strenghs";
+@import "./components/overview";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/newsletter";
