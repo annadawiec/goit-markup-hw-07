@@ -1,0 +1,87 @@
+.team {
+  background-color: var(--team-background);
+  height: 708px;
+}
+
+.team__tittle {
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team__item {
+  margin-right: 30px;
+  background-color: #ffffff;
+  width: 270px;
+  height: 428px;
+  border-block: 1px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__img {
+  margin: 0;
+  display: block;
+}
+
+.team__details {
+  padding-top: 30px;
+  margin-right: 0;
+}
+
+.team__member {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 30px;
+  margin: 0;
+}
+
+.team__position {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--contact-color);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.sm__list {
+  list-style-type: none;
+  display: flex;
+  gap: 22px;
+  padding-left: 0;
+}
+
+.sm__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.sm__item:hover,
+.sm__item:focus {
+  background-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sm__item:hover svg,
+.sm__item:focus svg {
+  fill: var(--main-background);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
