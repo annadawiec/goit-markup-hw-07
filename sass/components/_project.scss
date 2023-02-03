@@ -1,0 +1,112 @@
+.filter__button:hover,
+.filter__button:focus {
+  background-color: var(--main-blue);
+  color: var(--team-background);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.project__details {
+  line-height: 1.88;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
+
+.project__category {
+  color: var(--contact-color);
+  font-size: 16px;
+  line-height: 1.87;
+  margin-top: 4px;
+}
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.project__item {
+  cursor: pointer;
+}
+
+.project__item:hover,
+.project__item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__item:hover .project__overlay {
+  transform: translatey(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__img {
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  width: 370px;
+  text-align: left;
+  line-height: 2;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.project__box:hover .project__overlay {
+  transform: translatey(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__details {
+  position: relative;
+}
+
+.project__overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--main-background);
+  padding: 49px 45px 49px 24px;
+
+  transform: translatey(100%);
+}
+
+.project__details:hover .project__overlay {
+  transform: translatey(0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
