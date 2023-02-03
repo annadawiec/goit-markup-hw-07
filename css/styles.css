@@ -739,7 +739,7 @@ body {
   opacity: 0;
 }
 
-.close-btn {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -752,7 +752,7 @@ body {
   cursor: pointer;
 }
 
-.close-btn:hover {
+.modal__button:hover {
   animation-name: closeWindow;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -870,7 +870,7 @@ label {
   outline: none;
 }
 
-.submit {
+.modal__submit {
   color: var(--main-background);
   border-radius: 4px;
   font-weight: 700;
@@ -889,8 +889,8 @@ label {
   margin-bottom: 40px;
 }
 
-.submit:hover,
-.submit:focus {
+.modal__submit:hover,
+.modal__submit:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
