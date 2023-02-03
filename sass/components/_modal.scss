@@ -1,0 +1,96 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: $logoColor;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $mainBackground;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+      animation-name: closeWindow;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &__data {
+    color: $contactColor;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
+
+  &__icon {
+    position: absolute;
+    fill: #000000;
+    bottom: 11px;
+    left: 15px;
+    bottom: 15px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__label {
+    &:hover svg,
+    &:focus svg,
+    &:active svg {
+      border-color: $mainBlue;
+      fill: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    position: relative;
+
+    &.is-active::after {
+      content: "";
+      background-color: $mainBlue;
+      width: 53px;
+      height: 4px;
+      position: absolute;
+      top: 45px;
+      right: 0;
+    }
+  }
+
+  &__input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 4px;
+    padding-left: 42px;
+    transition-property: border-color;
+
+    &:focus,
+    &:hover {
+      border-color: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+    }
+  }
+}
