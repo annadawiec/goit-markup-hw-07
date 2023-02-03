@@ -21,7 +21,6 @@ body {
   color: var(--main-color);
 }
 
-/**łączone style**/
 .sm__icon {
   display: flex;
   width: 20px;
@@ -618,6 +617,10 @@ body {
 
 .order:focus {
   transform: scale(1.5);
+}
+.project {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project__list {
