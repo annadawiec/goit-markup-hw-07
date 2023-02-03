@@ -1,0 +1,40 @@
+.clients {
+  padding-top: 94px;
+}
+
+.clients__tittle {
+  line-height: 1.17;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.clients__icon {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.clients__icon:hover {
+  fill: var(--main-blue);
+  border: 1px solid var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__icon:focus {
+  fill: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__item {
+  margin-right: 30px;
+  position: relative;
+  overflow: hidden;
+}
