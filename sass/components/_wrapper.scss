@@ -2,11 +2,11 @@
   font-weight: 900px;
   line-height: 1.36;
   text-align: center;
-  color: var(--main-background);
+  color: $mainBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--footer-background);
+  background-color: $footerBackground;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -18,8 +18,8 @@
   max-width: 1600px;
   height: 600px;
   margin: auto;
-}
 
-.wrapper__tittle {
-  font-size: 44px;
+  &__tittle {
+    font-size: 44px;
+  }
 }
