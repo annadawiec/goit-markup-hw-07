@@ -1,32 +1,32 @@
 .strenghs {
   padding-top: 94px;
-}
 
-.strenghs__item {
-  box-sizing: border-box;
-  margin-right: 30px;
-  width: 270px;
-  border-block: 1px;
-}
+  &__item {
+    box-sizing: border-box;
+    margin-right: 30px;
+    width: 270px;
+    border-block: 1px;
+  }
 
-.strenghs__icon {
-  margin: 0;
-  background-color: var(--team-background);
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  &__icon {
+    margin: 0;
+    background-color: $teamBackground;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.strenghs__tittle {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+  &__tittle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 
-.strenghs__description {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contact-color);
-  margin-top: 10px;
-  margin-bottom: 0;
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $contactColor;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
