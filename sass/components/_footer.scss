@@ -1,112 +1,105 @@
 .footer {
   height: 252px;
-  background: var(--footer-background); /* CSS for FOOTER*/
-  color: var(--main-background);
+  background: $footerBackground;
+  color: $mainBackground;
   margin-top: 94px;
-}
 
-.footer__list {
-  display: flex;
-  list-style-type: none;
-  padding-left: 0px;
-}
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+  }
 
-.footer__logo {
-  padding-top: 60px; /* CSS for FOOTER*/
-  padding-bottom: 20px;
-}
+  &__logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
 
-.studio {
-  font-size: 26px;
-  text-decoration: none;
-  line-height: 1.17;
-  color: var(--main-background);
-}
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    padding-bottom: 9px;
+  }
 
-.footer__address {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71; /* CSS for FOOTER*/
-  padding-bottom: 9px;
-}
-.footer__contact {
-  margin-top: 0;
-  margin-bottom: 0; /* CSS for FOOTER*/
-  padding-bottom: 9px;
-}
+  &__contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+  }
 
-.footer__contact-mail:hover {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__mail:hover {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.footer__mail {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--footer-mail); /* CSS for FOOTER*/
-  text-decoration: underline;
-  width: 231px;
-  height: 21px;
-  padding-bottom: 9px;
-  padding-right: 30px;
-}
+  &__phone {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    color: $footerMail;
+    padding-bottom: 60px;
+    padding-right: 30px;
 
-.footer__phone {
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none; /* CSS for FOOTER*/
-  color: var(--footer-mail);
-  padding-bottom: 60px;
-  padding-right: 30px;
-}
+    &:hover,
+    &:focus {
+      color: $mainBackground;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 
-.footer__phone:hover,
-.footer__phone:focus {
-  color: var(--main-background); /* CSS for FOOTER*/
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__mail {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $footerMail;
+    text-decoration: underline;
+    width: 231px;
+    height: 21px;
+    padding-bottom: 9px;
+    padding-right: 30px;
 
-.footer__mail:hover,
-.footer__mail:focus {
-  color: var(--main-background);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:hover,
+    &:focus {
+      color: $mainBackground;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 
-.footer__sm {
-  list-style-type: none;
-  display: flex;
-  gap: 22px;
-  padding-left: 0;
-  margin-top: 20px;
-  gap: 10px;
-  cursor: pointer;
-}
+  &__sm {
+    list-style-type: none;
+    display: flex;
+    gap: 22px;
+    padding-left: 0;
+    margin-top: 20px;
+    gap: 10px;
+    cursor: pointer;
+  }
 
-.footer__sm__item {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-.footer__sm__item:hover,
-.footer__sm__item:focus {
-  background-color: var(--main-blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 
-.footer__sm__item:hover svg,
-.footer__sm__item:focus svg {
-  fill: var(--main-background);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.join {
-  margin-left: 70px;
-  margin-top: 72px;
+    &:hover,
+    &:focus {
+      background-color: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $mainBackground;
+    }
+  }
+  .join {
+    margin-left: 70px;
+    margin-top: 72px;
+  }
 }
