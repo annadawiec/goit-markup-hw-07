@@ -12,7 +12,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -40,7 +40,7 @@
   }
 }
 
-&__legend {
+.modal__legend {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -50,7 +50,7 @@
   margin-bottom: 12px;
 }
 
-&__label {
+.modal__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -66,6 +66,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
 .modal__data {
   color: $contactColor;
   font-weight: 400;
@@ -94,14 +95,13 @@
   margin-bottom: 4px;
   padding-left: 42px;
   transition-property: border-color;
-}
-
-.modal__input:focus,
-.modal__input:hover {
-  border-color: $mainBlue;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
+  &:focus,
+  &:hover {
+    border-color: $mainBlue;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
 }
 
 .modal__textera {
@@ -120,12 +120,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
-}
-
-.modal__textera:focus,
-.modal__textera:hover {
-  border-color: $mainBlue;
-  outline: none;
+  &:focus,
+  &:hover {
+    border-color: $mainBlue;
+    outline: none;
+  }
 }
 
 .modal__submit {
@@ -145,13 +144,12 @@
   position: absolute;
   margin-left: 164px;
   margin-bottom: 40px;
-}
-
-.modal__submit:hover,
-.modal__submit:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .contact-form {
@@ -166,15 +164,14 @@
 .terms__regulations {
   color: $mainBlue;
   cursor: pointer;
-}
-
-.terms__regulations:hover,
-.terms__regulations:focus,
-.terms__regulations:active,
-.terms__regulations:visited {
-  color: $mainBlue;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $mainBlue;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .terms__checkbox {
@@ -185,14 +182,18 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--contact-color);
+  color: $contactColor;
   display: line;
 }
 
 .checkbox__form {
   cursor: pointer;
   margin-left: 0;
+  position: relative;
+  cursor: pointer;
+  margin-left: 0;
 }
+
 .checkbox__form p {
   margin-left: 24px;
 }
