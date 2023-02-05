@@ -1,17 +1,3 @@
-.modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #00000033;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal__button {
   position: absolute;
   top: 8px;
@@ -23,7 +9,6 @@
   background-color: $mainBackground;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-
   :hover {
     animation-name: closeWindow;
     animation-duration: 2s;
@@ -40,115 +25,129 @@
   }
 }
 
-.modal__legend {
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 12px;
-}
-
-.modal__label {
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000033;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  margin-left: 40px;
-  position: relative;
-
-  &:hover svg,
-  &:focus svg,
-  &:active svg {
-    border-color: $mainBlue;
-    fill: $mainBlue;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.modal__data {
-  color: $contactColor;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
-}
-
-.modal__icon {
-  position: absolute;
-  fill: #000000;
-  bottom: 11px;
-  left: 15px;
-  bottom: 15px;
-  transition-property: fill;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__input {
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-bottom: 4px;
-  padding-left: 42px;
-  transition-property: border-color;
-  &:focus,
-  &:hover {
-    border-color: $mainBlue;
+  &__legend {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    position: relative;
+
+    &:hover svg,
+    &:focus svg,
+    &:active svg {
+      border-color: $mainBlue;
+      fill: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__data {
+    color: $contactColor;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
+
+  &__icon {
+    position: absolute;
+    fill: #000000;
+    bottom: 11px;
+    left: 15px;
+    bottom: 15px;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
   }
-}
 
-.modal__textera {
-  width: 448px;
-  height: 120px;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  padding-top: 12px;
-  padding-left: 16px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
-  &:focus,
-  &:hover {
-    border-color: $mainBlue;
-    outline: none;
+  .modal__input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 4px;
+    padding-left: 42px;
+    transition-property: border-color;
+    &:focus,
+    &:hover {
+      border-color: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+    }
   }
-}
 
-.modal__submit {
-  color: $mainBackground;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: $mainBlue;
-  position: absolute;
-  margin-left: 164px;
-  margin-bottom: 40px;
-  &:hover,
-  &:focus {
+  &__textera {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-top: 12px;
+    padding-left: 16px;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    &:focus,
+    &:hover {
+      border-color: $mainBlue;
+      outline: none;
+    }
+  }
+
+  &__submit {
+    color: $mainBackground;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: $mainBlue;
+    position: absolute;
+    margin-left: 164px;
+    margin-bottom: 40px;
+    &:hover,
+    &:focus {
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
 }
 
@@ -159,54 +158,52 @@
 .terms {
   display: flex;
   justify-content: center;
-}
-
-.terms__regulations {
-  color: $mainBlue;
-  cursor: pointer;
-  &:hover,
-  &:focus,
-  &:active,
-  &:visited {
+  &__regulations {
     color: $mainBlue;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      color: $mainBlue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__checkbox {
+    appearance: none;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+    display: line;
+  }
+
+  &__form {
+    cursor: pointer;
+    margin-left: 0;
+    position: relative;
+    cursor: pointer;
+    margin-left: 0;
+  }
+
+  &__form p {
+    margin-left: 24px;
+    &::before {
+      position: absolute;
+      display: block;
+      top: 15px;
+      content: "";
+      width: 16px;
+      height: 15px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
+    }
   }
 }
-
-.terms__checkbox {
-  appearance: none;
-}
-.checkbox__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: $contactColor;
-  display: line;
-}
-
-.checkbox__form {
-  cursor: pointer;
-  margin-left: 0;
-  position: relative;
-  cursor: pointer;
-  margin-left: 0;
-}
-
-.checkbox__form p {
-  margin-left: 24px;
-}
-.checkbox__form::before {
-  position: absolute;
-  display: block;
-  top: 15px;
-  content: "";
-  width: 16px;
-  height: 15px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
-}
-
 .terms__checkbox:checked + .checkbox__form::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
   background-position: center;
