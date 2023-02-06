@@ -1,4 +1,5 @@
 @use "./utils/_vars" as *;
+@import "./utils/onetime";
 @import "./utils/common";
 @import "./components/header";
 @import "./components/navigation";
@@ -11,6 +12,7 @@
 @import "./components/footer";
 @import "./components/newsletter";
 @import "./components/modal";
+@import "./components/terms";
 @import "./components/filter";
 @import "./components/project";
 @import "./components/logo";
