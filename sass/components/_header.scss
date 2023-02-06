@@ -18,32 +18,32 @@
       padding-right: 50px;
     }
   }
-}
 
-.header__contact {
-  color: $contactColor;
-  font-size: 14px;
-  line-height: 16.41px;
-  text-decoration: none;
-  padding-top: 32px;
-  font-weight: 500;
-  padding-left: 50px;
+  &__contact {
+    color: $contactColor;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-decoration: none;
+    padding-top: 32px;
+    font-weight: 500;
+    padding-left: 50px;
 
-  &:hover,
-  &:focus {
-    color: $mainBlue;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    svg {
-      fill: $mainBlue;
+    &:hover,
+    &:focus {
+      color: $mainBlue;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
 
-  &__icon {
-    margin-right: 10px;
-    fill: $contactColor;
+      svg {
+        fill: $mainBlue;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &__icon {
+      margin-right: 10px;
+      fill: $contactColor;
+    }
   }
 }
