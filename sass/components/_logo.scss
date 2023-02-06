@@ -1,0 +1,24 @@
+.logo {
+  color: $logoColor;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.17;
+
+  &__part-blue {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    color: $mainBlue;
+    text-decoration: none;
+  }
+
+  &__part-white {
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 1.17;
+    color: $mainBackground;
+    font-family: "Raleway";
+    font-weight: 700;
+  }
+}
