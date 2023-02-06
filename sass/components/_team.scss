@@ -50,38 +50,3 @@
     margin-top: 10px;
   }
 }
-
-.sm {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-
-  &__list {
-    list-style-type: none;
-    display: flex;
-    gap: 22px;
-    padding-left: 0;
-  }
-
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
-    &:hover,
-    &:focus {
-      background-color: $mainBlue;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      & svg {
-        fill: $mainBackground;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-  }
-}
