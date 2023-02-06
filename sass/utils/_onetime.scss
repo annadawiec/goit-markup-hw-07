@@ -1,0 +1,33 @@
+.is-active::after {
+  content: "";
+  background-color: $mainBlue;
+  width: 53px;
+  height: 4px;
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+
+.is-active {
+  position: relative;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.window {
+  width: 528px;
+  height: 581px;
+  background-color: $mainBackground;
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
+    0px 2px 1px #00000033;
+  border-radius: 4px;
+  position: relative;
+}
+
+.contact-form {
+  margin-left: 40px;
+}
